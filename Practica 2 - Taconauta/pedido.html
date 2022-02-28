@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Pedido Astral</title>
+</head>
+<body>
+    <nav><img src="/Assets/Img/LOGO BG2.png" alt="ASTROTACO_LOGO"></nav>
+    <h1>Aqui se hace el pedido</h1>
+    <form action="pedido.js">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre del cliente">
+        <br><br>
+        <label for="Mesa">Número de mesa</label>
+        <input type="number" name="Mesa" id="Mesa" placeholder="0">
+        <br>
+        <br>
+        <h3>Tipo de orden</h3>
+        <label for="Tipo_aqui">Comer Aquí</label>
+        <input type="radio" name="Tipo" id="Tipo_aqui" value="Aqui">
+        <label for="Tipo_llevar">Para llevar</label>
+        <input type="radio" name="Tipo" id="Tipo_llevar" value="Llevar">
+        <h3>¿De cuales tacos?</h3>
+        <label for="astral">Astral</label>
+        <input type="checkbox" name="astral" id="astral" value="astral">
+        <input type="number" name="astralcuantos" id="astralcuantos" value="astralcuantos" placeholder="¿Cuantos tacos?">
+        <label for="Woke">Woke</label>
+        <input type="checkbox" name="Woke" id="Woke" value="woke">
+        <input type="number" name="wokecuantos" id="wokecuantos" value="wokecuantos" placeholder="¿Cuantos tacos?">
+        <label for="Galactico">Galactico</label>
+        <input type="checkbox" name="Galactico" id="Galactico" value="galactico">
+        <input type="number" name="galacticocuantos" id="galacticocuantos" value="galacticocuantos" placeholder="¿Cuantos tacos?">
+        <H3>Bebidas</H3>
+        <select name="Bebidas" id="bebidas">
+            <option value="Refresco verde (7up)">Refresco verde (7up)</option>
+            <option value="Energia Oscura (Coca-Cola)">Energia Oscura (Coca-Cola)</option>
+            <option value="Naranja(Fanta)">Naranja(Fanta)</option>
+            <option value="Energia Cosmica(Sangria señorial).">Energia Cosmica(Sangria señorial)</option>
+        </select>
+        <br>
+        <input type="reset" value="reset">
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
