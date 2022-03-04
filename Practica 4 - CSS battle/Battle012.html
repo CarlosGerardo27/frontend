@@ -1,0 +1,75 @@
+<section class="wrapper">
+    <div class="cat-smile__container">
+        
+        <div class="cat-smile__left"></div>
+        <dic class="smile__end--left"></dic>
+        <div class="cat-smile__center"></div>
+        <div class="cat-smile__right"></div>
+        <div class="smile__end--right"></div>
+    </div>
+</section>
+<div></div>
+<style>
+    *{
+        margin: 0;
+    }
+  .wrapper {
+    width: 400px;
+    height: 300px;
+    background-color: #F5D6B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cat-smile__container{
+    width: auto;
+    display: flex;
+    position: relative;
+  }
+  .cat-smile__left{
+    width: 60px;
+    height: 35px;
+    border: solid 21px #D86F45;
+    border-top: none;
+    border-radius: 0 0 100px 100px;
+    position: relative;
+    top: 26px;
+    left: 21px;
+  }
+  .cat-smile__center{
+    width: 58px;
+    height: 42px;
+    border: solid 20px #D86F45;
+    border-bottom: none;
+    border-radius: 100px 100px 0 0;
+    position: relative;
+    top: -19px;
+  }
+  .cat-smile__right{
+    width: 60px;
+    height: 35px;
+    border: solid 21px #D86F45;
+    border-top: none;
+    border-radius: 0 0 100px 100px;
+    position: relative;
+    top: 26px;
+    right: 21px;
+  }
+  .smile__end--left{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #D86F45/* #D86F45 */ ;
+    position: absolute;
+    right: 21px;
+    top: 20px;
+  }
+  .smile__end--right{
+    width: 21px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #D86F45;
+    position: absolute;
+    left: 21px;
+    top: 20px;
+  }

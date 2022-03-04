@@ -1,0 +1,64 @@
+<div class="wrapper">
+    <section class="sauron__container">
+        <div class="sauron__left"></div>
+        <div class="sauron__center">
+            <div class="sauron__center--internal"></div>
+        </div>
+        <div class="sauron__right"></div>
+    </section>
+</div>
+<style>
+    *{
+        margin: 0px;
+    }
+    .wrapper{
+        width: 400px;
+        height: 300px;
+        background-color: #191210;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sauron__container{
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sauron__left{
+        width: 60px; 
+        height: 30px; 
+        border: solid 20px #ECA03D;;
+        border-radius: 0 0 100px 100px;
+        border-top: none;
+        position: relative;
+      	top: 26px;
+        left: 20px;
+    }
+    .sauron__center{
+        box-sizing: border-box;
+        width: 142px;
+        height: 142px;
+        border: solid 20px #ECA03D;
+        border-radius: 100px;
+      	display: flex;
+      	justify-content:center;
+      	align-items:center;
+    }
+    .sauron__center--internal{
+        width: 50px;
+        height: 50px;
+        background-color: #84271C;
+        border-radius:100%;
+    }
+    .sauron__right{
+        width: 60px; 
+        height: 30px; 
+        border-radius: 100px 100px 0 0;
+        border: solid 20px #ECA03D;;
+        border-bottom: none;
+        position: relative;
+		right: 20px;
+        top:-24px;
+    }
+</style>
