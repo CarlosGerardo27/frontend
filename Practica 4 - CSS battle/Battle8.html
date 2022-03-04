@@ -1,0 +1,74 @@
+<div class="wrapper">
+  <section class="fork">
+    <div class="fork__tines__container">
+      <div class="tines"></div>
+      <div class="tines2"></div>
+      <div class="tines"></div>
+      <div class="tines2"></div>
+      <div class="tines"></div>
+      <div class="tines2"></div>
+      <div class="tines"></div>
+    </div>
+    <div class="fork__body"></div>
+    <div class="fork__handle"></div>
+  </section>
+</div>
+<style>
+  *{
+    margin: 0px;
+  }
+  .wrapper{
+    background-color: #6592CF;
+    width: 400px;
+    height: 300px;
+    display:flex;
+    align-items:flex-end;
+  }
+  .fork{
+    margin: 0 auto;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+  }
+  .fork__tines__container {
+    width: 100%;
+    height: 100%;
+    background:  #6592CF;
+    top: 75px;
+    left: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tines{
+    background-color: #060F55;
+    width: 20px;
+    height: 110px;
+    border-radius: 50px;
+    transform: translate (-50%, -50%);
+    position: relative;
+    top: 10px;
+  }
+  .tines2{
+    background-color: #6592CF;
+    width: 20px;
+    height: 110px;
+    border-radius: 50px;
+    transform: translate (-50%, -50%);
+    position: relative;
+    top: 10px;
+  }
+  .fork__body{
+    background-color: #060F55;
+    width: 100%;
+    height: 100px;
+    border-radius: 0 0 100px 100px;
+  }
+  .fork__handle{
+    margin: 0 auto;
+    background-color: #060F55;
+    width: 20px;
+    height: 50px;
+  }
+</style>

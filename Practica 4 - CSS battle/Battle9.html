@@ -1,0 +1,52 @@
+
+<div class="wrapper">
+    <div class="rectangle"></div>
+    <div class="square1"></div>
+    <div class="square2"></div>
+    <div class="circle" ></div>
+</div>
+<style>
+*{
+    margin: 0px
+}
+
+.wrapper{
+    width: 400px;
+    height: 300px;
+    background-color: #222730;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.rectangle {
+    width: 100%;
+    height: 150px;
+    background-color: #4CAAB3;
+  }
+
+.square1{
+    width:250px;
+    height: 250px;
+    background-color: #222730;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 75px;
+  }
+.square2{
+    width:150px;
+    height: 150px;
+    background-color: #4CAAB3;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 125px;
+}
+.circle{
+    background-color: #393E46;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 175px;
+}
+</style>
