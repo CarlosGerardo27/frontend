@@ -6,6 +6,10 @@ body{
 
 
 /* Sección principal */
+.navbar{
+    display: none;
+}
+
 .main-container {
     display: flex;
 }
@@ -150,3 +154,69 @@ form{
 .form__button--b:hover{
     background-color: #FC83CC;
 }
+
+
+@media (max-width: 1080px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        background-color: white;
+    }
+    .main-container{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .sidebar {
+      display: none;
+    }
+    .hero{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .option__container{
+        width: 100%;
+        flex-direction: row;
+        margin: 40px 0px 40px 0px;
+    }
+    .form__container{
+        justify-content: center;
+    }
+    form{
+        padding-bottom: 30px;
+        max-width: 380px;
+    }
+    .form__input{
+        max-width: 95%;
+    }
+    .form__input--description{
+        max-width: 95%;
+    }
+  }
+
+
+  @media (max-width: 600px) {
+    .option__container{
+        width: 100%;
+        flex-direction: column;
+        margin: 40px 0px 40px 0px;
+    }
+
+    .form__buttons-container{
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20PX;
+    }
+    .form__button{
+        width: 95%;
+        margin-bottom: 10PX;
+    }
+    .form__button--a{
+        width: 100%;
+    }
+    .form__button--b{
+        width: 95%;
+    }
+  }
+
+  

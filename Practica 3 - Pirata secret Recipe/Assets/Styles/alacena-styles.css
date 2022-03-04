@@ -4,9 +4,9 @@
     background-color: #383434;
 }
 
-.navbar__menu{
+.navbar{
     height: 154px;
-    background-image: url("/Assets/Img/Navbar.png");
+    background-image: url("../Img/Navbar.png");
     width: 100%;
 } 
 
@@ -364,3 +364,71 @@
     border-radius: 7px;
     font-family: 'Cabin', sans-serif;
 }
+
+
+/* mediaquerys */
+
+@media (max-width: 1300px){
+
+    /* generales */
+    .column{
+        flex-direction: column;
+    }
+
+    /* especificas */
+
+
+    .table__header-container{
+        display: none;
+    }
+    .table__header-container--mobile{
+        display: flex;
+    }
+    .table__element-container{
+        flex-direction: column;
+    }
+    .table__element{
+        display: none;
+    }
+    .table__element--first-mobile{
+        display: flex;
+    }
+    .Dashboard__order-container{
+        max-width: 100%;
+    }
+    .Dashboard__table-container--2colum{
+        flex-direction: column;
+    }
+    .table__element--white{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper__father{
+        max-width: 600px;
+    }
+    .navbar{
+        height: auto;
+        background-image: none;
+        background-color: white;
+        padding: 0 10px 0 10px;
+    } 
+    
+    .navbar__menu{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background-image: url("../Img/navbar-mobile.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-direction: column;
+    }
+    .navbar__button--pink{
+        margin-right: 10px;
+        width: 240px;
+    }
+    .navbar__button--yellow{
+        width: 240px;
+    }
+  }
